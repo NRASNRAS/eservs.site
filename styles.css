@@ -1,0 +1,149 @@
+/* Generic */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: Inter, -apple-system, Roboto, 'Open Sans', system-ui, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+:root {
+    --white: #fff;
+    --gray-100: #eee;
+    --gray-200: #ddd;
+    --gray-300: #ccc;
+    --gray-400: #bbb;
+    --gray-500: #aaa;
+    --gray-600: #999;
+    --gray-700: #888;
+    --gray-800: #777;
+    --gray-900: #666;
+}
+
+/* hr */
+hr {
+    all: unset;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: var(--gray-800);
+}
+
+/* icon */
+.icon {
+    height: 1.5em;
+    display: inline;
+    vertical-align: bottom;
+    user-select: none;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    background-color: var(--gray-100);
+    height: 180px;
+    justify-content: center;
+}
+
+header img {
+    height: 100%;
+    width: auto;
+    border-radius: 12.5%;
+}
+
+header > * {
+    padding: 2em;
+}
+
+header .section-text h1 {
+    line-height: 25%;
+}
+
+/* main */
+
+main {
+    width: 100%;
+    background-color: var(--gray-100);
+    padding: .5em 0;
+    text-align: center;
+}
+
+/* nav */
+
+nav {
+    padding: 1em 0;
+    width: 100%;
+    background-color: var(--gray-100);
+}
+
+nav ul {
+    all: unset;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+nav a {
+    all: unset;
+    cursor: pointer;
+    padding: 10px 1em;
+}
+
+nav a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* section */
+
+section {
+    padding: 0 5%;
+}
+
+section h1 {
+    font-size: 2em;
+}
+
+section ul {
+    list-style: none;
+    columns: 2;
+}
+
+section li, section a {
+    width: 100%;
+    display: block;
+}
+
+section li {
+    padding: .5em;
+}
+
+section a {
+    cursor: pointer;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: black;
+}
+
+section a:hover {
+    color: blue;
+    border-bottom: 2px solid blue;
+    margin-bottom: -2px;
+}
+
+@media (max-width: 710px) {
+    nav, .nav-hr {
+        display: none;
+    }
+
+    section ul {
+        columns: 1;
+    }
+}
