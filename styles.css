@@ -52,7 +52,7 @@ header {
 }
 
 header img {
-    height: 100%;
+    height: calc(180px - 4em);
     width: auto;
     border-radius: 12.5%;
 }
