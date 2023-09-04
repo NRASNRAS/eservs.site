@@ -135,7 +135,7 @@ section a {
 section a:hover {
     color: blue;
     border-bottom: 2px solid blue;
-    margin-bottom: -2px;
+    box-sizing: content-box;
 }
 
 @media (max-width: 710px) {
