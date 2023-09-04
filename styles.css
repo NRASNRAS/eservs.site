@@ -130,12 +130,12 @@ section a {
     font-size: 1.2em;
     text-decoration: none;
     color: black;
+    border-bottom: 2px solid transparent;
 }
 
 section a:hover {
     color: blue;
     border-bottom: 2px solid blue;
-    box-sizing: content-box;
 }
 
 @media (max-width: 710px) {
